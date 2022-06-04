@@ -19,7 +19,7 @@ function App () {
     setAgencyId (value);
   };
 
-  const handleYearChange = (value) => {
+  const handleYearChange = value => {
     setYear (value);
   };
 
@@ -31,12 +31,13 @@ function App () {
             <Text Style="color:white">Agency List</Text>
             <AgencyList onChange={handleChange} />
             <Text Style="color:white">Budget Year</Text>
-            <Select 
-            defaultValue="2021"
-            style={{
-              width: 100,
-            }}
-            onChange={handleYearChange}>
+            <Select
+              defaultValue="2021"
+              style={{
+                width: 100,
+              }}
+              onChange={handleYearChange}
+            >
               <Option value="2021">2021</Option>
               <Option value="2020">2020</Option>
               <Option value="2019">2019</Option>
@@ -46,7 +47,9 @@ function App () {
           </Space>
         </Header>
         <Content>
-          <Obligations agencyId={agencyId} year={year} />
+          
+            <Obligations agencyId={agencyId} year={year} />
+          
         </Content>
         <Footer>Made with 💛 by RapidAPI</Footer>
       </Layout>

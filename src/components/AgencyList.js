@@ -20,7 +20,7 @@ export default class AgencyList extends React.Component {
       url: 'https://debt-api.p.rapidapi.com/v2/references/toptier_agencies/',
       headers: {
         'X-RapidAPI-Host': 'debt-api.p.rapidapi.com',
-        'X-RapidAPI-Key': 'dca14eb7efmshd997aeb7daee381p1529e4jsnc928f6c6b4c8',
+        'X-RapidAPI-Key': 'b9da0a05c7mshe3449d418b185eep1245d5jsn97e247009966',
       },
     };
 
