@@ -28,9 +28,9 @@ function App () {
       <Layout>
         <Header>
           <Space>
-            <Text Style="color:white">Agency List</Text>
+            <Text>Agency List</Text>
             <AgencyList onChange={handleChange} />
-            <Text Style="color:white">Budget Year</Text>
+            <Text>Budget Year</Text>
             <Select
               defaultValue="2021"
               style={{

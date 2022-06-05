@@ -37,7 +37,7 @@ export default class Obligations extends React.Component {
   componentDidUpdate (prevProps) {
     const options = {
       method: 'GET',
-      url: 'https://debt-api.p.rapidapi.com/v2/federal_obligations/',
+      url: 'https://debt-api.p.rapidapi.com/api/v2/federal_obligations/',
       params: {
         fiscal_year: this.props.year,
         funding_agency_id: this.props.agencyId,
@@ -45,6 +45,8 @@ export default class Obligations extends React.Component {
         page: '1',
       },
       headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
         'X-RapidAPI-Host': 'debt-api.p.rapidapi.com',
         'X-RapidAPI-Key': 'b9da0a05c7mshe3449d418b185eep1245d5jsn97e247009966',
       },
